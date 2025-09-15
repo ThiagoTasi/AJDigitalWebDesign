@@ -57,35 +57,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             color: #ffffff;
         }
         .form-container {
-            background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white to match image */
+            background-color: rgba(128, 128, 128, 0.5); /* Fume color with transparency */
             border-radius: 15px; /* Rounded corners */
             padding: 2rem;
             backdrop-filter: blur(5px); /* Slight blur effect */
-        }
-        .header {
-            background-color: #151616ff;
-            padding: 1rem;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        .header nav ul {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
-        .header nav ul li a {
-            color: #ffffff;
-            font-weight: 500;
-            font-size: 1.125rem;
-            transition: color 0.3s;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .header nav ul li a:hover {
-            color: #60a5fa;
-        }
-        .header nav ul li a i {
-            font-size: 1rem;
         }
         .form-container input,
         .form-container textarea {
@@ -167,15 +142,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </style>
 </head>
 <body class="flex flex-col min-h-screen">
-    <header class="header">
-        <nav>
-            <ul>
-                <li><a href="#quem-somos"><i class="fas fa-user"></i> Quem somos?</a></li>
-                <li><a href="#o-que-fazemos"><i class="fas fa-folder"></i> O que fazemos?</a></li>
-                <li><a href="#contatos"><i class="fas fa-phone"></i> Contatos</a></li>
-            </ul>
-        </nav>
-    </header>
     <div class="flex-grow flex flex-col items-center justify-center p-4">
         <div class="form-container w-full max-w-lg">
             <h1 class="text-xl font-semibold text-center text-white mb-4">Contato</h1>
